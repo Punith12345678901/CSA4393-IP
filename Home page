@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(mm.jpeg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #333;
+        }
+
+        .navbar {
+            background-color: rgba(29, 185, 84, 0.9);
+            padding: 1rem;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar ul li {
+            margin-left: 1.5rem;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero {
+            background-image: url(hero.jpg);
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 5rem 2rem;
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        .hero h1 {
+            margin: 0;
+            font-size: 4rem;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        }
+
+        .content {
+            padding: 2rem;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            margin: 2rem;
+        }
+
+        .content h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            text-align: center;
+            color: #1db954;
+        }
+
+        .playlist {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .playlist-item {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: calc(30% - 1rem);
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            text-align: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .playlist-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .playlist-item img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .playlist-item h3 {
+            margin: 0.5rem 0;
+            color: #1db954;
+        }
+
+        .playlist-item p {
+            color: #666;
+        }
+
+        .playlist-item button {
+            background-color: #1db954;
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+            margin-top: 1rem;
+        }
+
+        .playlist-item button:hover {
+            background-color: #17a443;
+        }
+
+        .playlist-item button:active {
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">Spotify</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#browse">Browse</a></li>
+            <li><a href="#library">Library</a></li>
+            <li><a href="#premium">Premium</a></li>
+        </ul>
+    </div>
+    <div class="hero">
+        <h1>Welcome to Spotify</h1>
+        <p>Listen to your favorite music anytime, anywhere.</p>
+    </div>
+    <div class="content">
+        <h2>Featured Playlists</h2>
+        <div class="playlist">
+            <div class="playlist-item">
+                <img src="ll.jpg" alt="Playlist 1">
+                <h3>Top Hits</h3>
+                <p>Enjoy the top hits from around the world.</p>
+                <button type="submit" onclick="document.location='topplaylist.html'">Top Hits</button>
+            </div>
+            <div class="playlist-item">
+                <img src="ss.jpg" height=400px>
+                <h3>Chill Vibes</h3>
+                <p>Relax and unwind with these chill tracks.</p>
+                <button type="submit" onclick="document.location='Hangover.html'">Chill Vibes</button>
+            </div>
+            <div class="playlist-item">
+                <img src="gym.jpg" height="400px">
+                <h3>Workout</h3>
+                <p>Get pumped up with this workout playlist.</p>
+                <button type="submit" onclick="document.location='homepage.html'">Workout</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+home page
