@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melody Songs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        .navbar {
+            background-color: #1db954;
+            padding: 1rem;
+            color: rgb(28, 26, 26);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar ul li {
+            margin-left: 1.5rem;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .header {
+            background-color: #1db954;
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 3rem;
+        }
+
+        .content {
+            padding: 2rem;
+            margin-top: 20px;
+        }
+
+        .content h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            text-align: center;
+            color: #1db954;
+        }
+
+        .song-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        .song-item {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: calc(30% - 1rem);
+            margin-bottom: 1rem;
+            padding: 1rem;
+            text-align: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .song-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .song-item img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .song-item h3 {
+            margin: 0.5rem 0;
+            color: #1db954;
+        }
+
+        .song-item p {
+            color: #666;
+        }
+
+        .song-item button {
+            background-color: #1db954;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.2s, transform 0.2s;
+        }
+
+        .song-item button:hover {
+            background-color: #17a148;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">Spotify</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#browse">Browse</a></li>
+            <li><a href="#library">Library</a></li>
+            <li><a href="#premium">Premium</a></li>
+        </ul>
+    </div>
+    <div class="header">
+        <h1>Hangover cure</h1>
+    </div>
+    <div class="content">
+        <h2>Enjoy the Best Melody Songs</h2>
+        <div class="song-list">
+            <div class="song-item">
+                <img src="yy.jpg" alt="Song 1">
+                <h3>illahi</h3>
+                <p>Artist 1</p>
+                <button type="submit" onclick="document.location='song1.html'">Play Now</button>
+            </div>
+            <div class="song-item">
+                <img src="ba.jpg" alt="Song 2">
+                <h3>ankhon se batana</h3>
+                <p>Artist 2</p>
+                <button type="submit" onclick="document.location='song2.html'">Play Now</button>
+            </div>
+            <div class="song-item">
+                <img src="" alt="Song 3">
+                <h3>khariyat</h3>
+                <p>Artist 3</p>
+                <button type="submit" onclick="document.location='song3.html'">Play Now</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+hangover html
